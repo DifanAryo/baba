@@ -2581,35 +2581,35 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #9d6413;
+  border-color: #9d6413;
   box-shadow: none;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #9d6413;
+  border-color: #9d6413;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #9d6413;
+  border-color: #9d6413;
   box-shadow: 0 0 0 0 rgba(38, 143, 255, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #9d6413;
+  border-color: #9d6413;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
+  background-color: #9d6413;
+  border-color: #9d6413;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -53010,3 +53010,31 @@ a.text-muted:hover {
   border-color: #4b545c !important;
 }
 /*# sourceMappingURL=adminlte.css.map */
+
+
+
+.btn-brown {
+    background-color: #8B4513; /* Warna coklat */
+    border-color: #8B4513;
+    color: white; /* Warna teks */
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Menyembunyikan sidebar di awal */
+  transition: left 0.3s ease-in-out;
+}
+
+.close-btn {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: -30px;
+}
