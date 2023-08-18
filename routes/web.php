@@ -3,6 +3,7 @@
 use App\Http\Controllers\AssetController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\InputController;
+use App\Http\Controllers\VerifController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -25,7 +26,7 @@ Route::get('/dashboard', function () {
     return view('welcome');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+
 
 Route:: middleware('auth')->group(function(){
     route::get('input', [InputController::class,'index'])->name('input');
@@ -36,3 +37,8 @@ Route:: middleware('auth')->group(function(){
     route::get('asset', [AssetController::class,'index'])->name('asset');
 });
 
+Route:: middleware('auth')->group(function(){
+    route::get('perif', [VerifController::class,'index'])->name('verif');
+});
+
+require __DIR__.'/auth.php';
